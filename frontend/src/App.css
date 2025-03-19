@@ -1,0 +1,139 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a light background to the app */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  color: #333;
+}
+
+/* Main container styles */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #34495e;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus {
+  border-color: cadetblue;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6d7c86;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f9;
+  color: #2c3e50;
+}
+
+table tr:hover {
+  background-color: #ecf0f1;
+}
+
+/* Action buttons inside table */
+button.update, button.delete {
+  padding: 6px 10px;
+  font-size: 14px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button.update {
+  background-color: #3b9ee0;
+  color: #fff;
+}
+
+button.update:hover {
+  background-color: #a6d1b9;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+/* Handle empty state message */
+p {
+  text-align: center;
+  color: #7f8c8d;
+}
+
+/* Update form styling */
+.update-form {
+  margin-top: 40px;
+}
+
+.update-form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
